@@ -9,6 +9,8 @@ Une fois le service créé, nous allons pouvoir faire notre premier push sur not
 
 Lien pour accéder à la page en question : http://tcp-mo6.mogenius.io:11625/
 
+
+
 ## Aller plus loins : communication avec une Base de Donnée
 
 La suite de cette documentation se base sur une autre image pour le Front, avec un autre DockerFile, trouvable dans la branche "dev" du dépôt. Cependant, je n'ai pas pu aller au bout de cette partie.
@@ -21,3 +23,5 @@ Ensuite, dans le fichier "application.properties" se trouvant dans "/src/main/re
 
 Ex:
 spring.datasource.password=${DB_PASSWORD}
+
+
