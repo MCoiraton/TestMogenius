@@ -1,6 +1,5 @@
-package main.java.com.polytech.testMogenius;
+package com.polytech.testMogenius;
 
-import main.java.com.polytech.testMogenius.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +18,7 @@ public class LikesRest {
 
     @GetMapping(path="/likes")
     public Integer getNbLikes(){
-        likesService.getNbLikes();
+        return likesService.getNbLikes();
     }
 
 }

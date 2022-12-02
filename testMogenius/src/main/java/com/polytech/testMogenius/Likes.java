@@ -1,4 +1,4 @@
-package main.java.com.polytech.testMogenius;
+package com.polytech.testMogenius;
 import javax.persistence.Entity;
 
 @Entity
