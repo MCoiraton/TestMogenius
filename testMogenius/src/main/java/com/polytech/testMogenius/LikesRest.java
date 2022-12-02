@@ -3,22 +3,23 @@ package com.polytech.testMogenius;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
 @RestController
 public class LikesRest {
     @Autowired
-    private LikesService likesService;
+    private LikesRepository likesRepository;
 
-    @GetMapping(path="/Addlike")
+    @PostMapping(path="/Addlike")
     public void addLike(){
-        likesService.addLike();
+        likesRepository.addLike();
     }
 
-    @GetMapping(path="/likes")
+    @GetMapping(path="/")
     public Integer getNbLikes(){
-        return likesService.getNbLikes();
+        return likesRepository.getNbLikes();
     }
 
 }
