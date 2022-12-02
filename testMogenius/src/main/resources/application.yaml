@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/TestMogenius
+    username: postgres
+    password: admin
+  jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: true
+      hibernate:
+       ddl-auto: update
+  liquibase:
+    enabled: false
